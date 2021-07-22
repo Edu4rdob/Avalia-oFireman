@@ -1,1 +1,3 @@
-# Avalia-oFireman
+# Calculadora API (GQSO IFAL)
+
+Este projeto tem como o objetivo implementar uma API de calculadora
