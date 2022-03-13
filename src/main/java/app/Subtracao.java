@@ -8,7 +8,7 @@ public class Subtracao{
     @GET
     public String rotaSub(@PathParam double op1, @PathParam double op2){
         try{
-            return String.format("%.2f", op1-op2);
+            return String.format("%.1f", op1-op2);
         }catch(NumberFormatException nfe){
             throw new BadRequestException(String.format("Valores inválidos"));
         }
