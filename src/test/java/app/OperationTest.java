@@ -4,16 +4,24 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Sumtest{
+public class OperationTest{
+
+    Soma soma;
+    Subtracao subtracao;
+    
+    @BeforeEach
+    public void setup(){
+        soma = new Soma();
+        subtracao = new Subtracao();
+    }
+
     @Test
-    public void sumTest(){
-        Soma soma = new Soma();
+    public void testSum(){
         assertEquals(14, soma.rotaSoma(6,8));
     };
     @Test 
-    public void subTest(){
+    public void testSub(){
         
-        Subtracao subtracao = new Subtracao();
         assertEquals(0, subtracao.rotaSub(2, 2));
 
     }
