@@ -17,12 +17,12 @@ public class OperationTest{
 
     @Test
     public void testSum(){
-        assertEquals(14, soma.rotaSoma(6,8));
+        assertEquals(14.00, soma.rotaSoma(6,8));
     };
     @Test 
     public void testSub(){
         
-        assertEquals(0, subtracao.rotaSub(2, 2));
+        assertEquals(0.00, subtracao.rotaSub(2, 2));
 
     }
 }
